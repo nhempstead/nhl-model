@@ -343,6 +343,13 @@ def main():
         for vp in sorted(value_plays, key=lambda x: -x['edge']):
             print(f"{vp['game']}: {vp['pick']} ({vp['odds']:+d})")
             print(f"  Model: {vp['model']:.1%} | Market: {vp['market']:.1%} | Edge: {vp['edge']:+.1f}%")
+        
+        # Log to Google Sheet (clears duplicates first)
+        try:
+            from log_picks import log_picks
+            log_picks(value_plays)
+        except Exception as e:
+            print(f"\nNote: Could not log to sheet: {e}")
     else:
         print("No value plays found with 3%+ edge")
     
