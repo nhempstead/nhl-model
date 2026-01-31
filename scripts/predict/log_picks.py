@@ -51,13 +51,12 @@ def log_pick(ws, game, pick, odds, model_prob, market_prob, edge):
         game,
         pick,
         str(odds) if odds < 0 else f'+{odds}',
-        f'{model_prob:.1f}',
-        f'{market_prob:.1f}',
-        f'{edge:.1f}',
+        f'{model_prob:.1f}%',
+        f'{market_prob:.1f}%',
+        f'+{edge:.1f}%' if edge > 0 else f'{edge:.1f}%',
         '',  # Result
         '',  # Profit
         '',  # CLV
-        'V2 Model'
     ]
     
     ws.append_row(row)
