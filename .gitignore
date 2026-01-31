@@ -1,0 +1,38 @@
+# Data files (too large for git)
+data/raw/*.csv
+data/processed/*.csv
+data/odds/*.csv
+
+# Keep directory structure
+!data/raw/.gitkeep
+!data/processed/.gitkeep
+!data/odds/.gitkeep
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+venv/
+ENV/
+
+# Models (large binary files)
+models/trained/*.pkl
+models/trained/*.joblib
+!models/trained/.gitkeep
+
+# IDE
+.idea/
+.vscode/
+*.swp
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Jupyter
+.ipynb_checkpoints/
+
+# Logs
+*.log
