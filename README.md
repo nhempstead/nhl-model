@@ -16,12 +16,15 @@ This model is under active development. Current phase: **Data Collection**
 
 ## Data Requirements
 
-| Dataset | Source | Rows Needed | Status |
-|---------|--------|-------------|--------|
-| Historical games | NHL API | ~10,000 | 🔄 In Progress |
-| Game-level xG | MoneyPuck | ~10,000 | ⏳ Pending |
+| Dataset | Source | Rows | Status |
+|---------|--------|------|--------|
+| Game-level team stats | MoneyPuck | 226,851 | ✅ Complete |
+| Shot-level xG data | MoneyPuck | 786,245 | ✅ Complete |
+| Goalie season stats | MoneyPuck | 4,926 | ✅ Complete |
+| Team season stats | MoneyPuck | 1,561 | ✅ Complete |
 | Historical odds | TBD | ~10,000 | ⏳ Pending |
-| Goalie starts | NHL API | ~10,000 | ⏳ Pending |
+
+**Total: 1,019,583 rows of real data**
 
 ## Model Architecture
 
@@ -70,7 +73,11 @@ scripts/
 
 ## Progress Log
 
-- 2026-01-31: Repository created. Starting data collection.
+- 2026-01-31 15:22: Data collection complete - 1M+ rows
+  - Game-level team stats (2008-2025): 226,851 rows
+  - Shot-level xG data (2018-2024): 786,245 rows
+  - Goalie/team season summaries: 6,487 rows
+- 2026-01-31 15:16: Repository created. Starting data collection.
 
 ## License
 
