@@ -40,12 +40,22 @@ def get_todays_games():
     
     return games
 
+# Global cache for game data
+_GAME_DATA_CACHE = None
+
+def get_game_data():
+    """Load game data once and cache it"""
+    global _GAME_DATA_CACHE
+    if _GAME_DATA_CACHE is None:
+        path = os.path.join(DATA_DIR, 'raw/moneypuck_all_games.csv')
+        _GAME_DATA_CACHE = pd.read_csv(path)
+    return _GAME_DATA_CACHE
+
 def get_team_features(team, game_data):
     """Get rolling features for a team from historical data"""
     
-    # Load the processed matchups to get recent team stats
-    path = os.path.join(DATA_DIR, 'raw/moneypuck_all_games.csv')
-    df = pd.read_csv(path)
+    # Use cached data
+    df = get_game_data()
     
     # Filter to 5on5 and this team
     df = df[(df['situation'] == '5on5') & (df['team'] == team)].copy()
