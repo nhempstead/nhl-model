@@ -172,10 +172,29 @@ def predict_game(home_team, away_team, model_package):
     raw_prob = model.predict_proba(X)[0, 1]
     cal_prob = calibrator.predict_proba([[raw_prob]])[0, 1]
     
+    # Apply home ice boost (from training calibration)
+    home_ice_boost = model_package.get('metrics', {}).get('cal', {}).get('home_ice_boost', 0.025)
+    cal_prob = min(max(cal_prob + home_ice_boost, 0.01), 0.99)
+    
+    # Apply goaltender adjustment
+    try:
+        import sys
+        sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.dirname(__file__))))
+        from scripts.features.goalie_features import calculate_goalie_matchup_adjustment
+        goalie_adj = calculate_goalie_matchup_adjustment(home_team, away_team)
+        goalie_adjustment = goalie_adj['adjustment']
+        cal_prob = min(max(cal_prob + goalie_adjustment, 0.01), 0.99)
+        goalie_info = goalie_adj
+    except Exception as e:
+        goalie_adjustment = 0
+        goalie_info = {'error': str(e)}
+    
     return {
         'home_prob': cal_prob,
         'away_prob': 1 - cal_prob,
         'raw_prob': raw_prob,
+        'goalie_adjustment': goalie_adjustment,
+        'goalie_info': goalie_info,
     }
 
 def get_current_odds():

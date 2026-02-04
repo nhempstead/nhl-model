@@ -46,7 +46,7 @@ def load_game_data():
     return df
 
 
-def compute_rolling_features(df, windows=[5, 10, 20]):
+def compute_rolling_features(df, windows=[10, 20, 40]):
     """
     Compute rolling averages for each team.
     
@@ -137,13 +137,16 @@ def create_matchups(df):
     # Create target: home win (using total goals, not 5on5)
     matchups['home_win'] = (matchups['h_totalGoalsFor'] > matchups['h_totalGoalsAgainst']).astype(int)
     
-    # Create differentials
+    # Create differentials - use L20 and L40 for more stability
     diff_pairs = [
-        ('xGoalsPercentage', 'L10'),
-        ('corsiPercentage', 'L10'),
-        ('xGoalsFor', 'L10'),
-        ('xGoalsAgainst', 'L10'),
-        ('winPct', 'L10'),
+        ('xGoalsPercentage', 'L20'),
+        ('xGoalsPercentage', 'L40'),
+        ('corsiPercentage', 'L20'),
+        ('corsiPercentage', 'L40'),
+        ('xGoalsFor', 'L20'),
+        ('xGoalsAgainst', 'L20'),
+        ('winPct', 'L20'),
+        ('winPct', 'L40'),
     ]
     
     for metric, window in diff_pairs:
@@ -156,9 +159,9 @@ def create_matchups(df):
 
 
 def add_rest_days(df):
-    """Add rest days feature"""
+    """Add rest days and home ice features"""
     
-    print("\nAdding rest days...")
+    print("\nAdding rest days and home ice...")
     
     df = df.sort_values(['h_team', 'gameDate']).copy()
     

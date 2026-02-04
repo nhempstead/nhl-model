@@ -87,15 +87,16 @@ def train_baseline(X_train, y_train, X_val, y_val):
 def train_xgboost(X_train, y_train, X_val, y_val):
     """XGBoost with calibration"""
     
-    # Conservative parameters to prevent overfitting
+    # Balanced parameters - enough capacity for confident predictions
     model = XGBClassifier(
-        n_estimators=100,
-        max_depth=3,
+        n_estimators=200,
+        max_depth=4,
         learning_rate=0.05,
         subsample=0.8,
         colsample_bytree=0.8,
-        reg_alpha=1.0,
-        reg_lambda=1.0,
+        reg_alpha=0.1,
+        reg_lambda=0.1,
+        min_child_weight=10,
         random_state=42,
         eval_metric='logloss',
         early_stopping_rounds=20,
@@ -121,7 +122,7 @@ def train_xgboost(X_train, y_train, X_val, y_val):
 
 
 def calibrate_model(model, X_val, y_val, val_probs):
-    """Platt scaling calibration"""
+    """Platt scaling calibration with home ice adjustment"""
     
     # Fit logistic regression on validation probabilities
     calibrator = LogisticRegression()
@@ -130,9 +131,16 @@ def calibrate_model(model, X_val, y_val, val_probs):
     # Calibrated predictions
     cal_probs = calibrator.predict_proba(val_probs.reshape(-1, 1))[:, 1]
     
+    # Home ice adjustment: actual home win rate is ~54% historically
+    # Shift predictions toward home team by ~2-3%
+    home_ice_boost = 0.025
+    cal_probs_adjusted = cal_probs + home_ice_boost
+    cal_probs_adjusted = np.clip(cal_probs_adjusted, 0.01, 0.99)
+    
     cal_metrics = {
-        'cal_brier': brier_score_loss(y_val, cal_probs),
-        'cal_logloss': log_loss(y_val, cal_probs),
+        'cal_brier': brier_score_loss(y_val, cal_probs_adjusted),
+        'cal_logloss': log_loss(y_val, cal_probs_adjusted),
+        'home_ice_boost': home_ice_boost,
     }
     
     return calibrator, cal_metrics
@@ -235,6 +243,9 @@ def main():
     
     test_probs_raw = xgb_model.predict_proba(X_test)[:, 1]
     test_probs = calibrator.predict_proba(test_probs_raw.reshape(-1, 1))[:, 1]
+    # Apply home ice adjustment
+    home_ice_boost = cal_metrics.get('home_ice_boost', 0.025)
+    test_probs = np.clip(test_probs + home_ice_boost, 0.01, 0.99)
     
     test_metrics = {
         'test_brier': brier_score_loss(y_test, test_probs),
