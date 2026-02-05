@@ -1,0 +1,230 @@
+{
+  "fetched_at": "2026-02-05T18:59:16.480194+00:00",
+  "teams": {
+    "NYR": {
+      "team": "NYR",
+      "last_updated": "2026-02-04T16:12:34.041Z",
+      "goalies": [
+        {
+          "name": "Jonathan Quick",
+          "player_id": 771,
+          "jersey": 32,
+          "injured": false,
+          "injury_status": null
+        },
+        {
+          "name": "Spencer Martin",
+          "player_id": 2721,
+          "jersey": 41,
+          "injured": false,
+          "injury_status": null
+        },
+        {
+          "name": "Igor Shesterkin",
+          "player_id": 25267,
+          "jersey": 31,
+          "injured": true,
+          "injury_status": "IR"
+        }
+      ],
+      "injuries": [
+        {
+          "name": "Conor Sheary",
+          "player_id": 2568,
+          "status": "IR",
+          "position": "Injured Reserve 1"
+        },
+        {
+          "name": "Adam Fox",
+          "player_id": 27251,
+          "status": "IR",
+          "position": "Injured Reserve 2"
+        },
+        {
+          "name": "Adam Edstrom",
+          "player_id": 30691,
+          "status": "IR",
+          "position": "Injured Reserve 3"
+        },
+        {
+          "name": "Igor Shesterkin",
+          "player_id": 25267,
+          "status": "IR",
+          "position": "Injured Reserve 4"
+        },
+        {
+          "name": "Artemi Panarin",
+          "player_id": 2519,
+          "status": "OUT",
+          "position": "Injured Reserve 5"
+        }
+      ],
+      "total_players": 43,
+      "fetched_at": "2026-02-05T18:59:16.268473+00:00"
+    },
+    "CAR": {
+      "team": "CAR",
+      "last_updated": "2026-02-05T17:11:16.005Z",
+      "goalies": [
+        {
+          "name": "Brandon Bussi",
+          "player_id": 30153,
+          "jersey": 32,
+          "injured": false,
+          "injury_status": null
+        },
+        {
+          "name": "Frederik Andersen",
+          "player_id": 1942,
+          "jersey": 31,
+          "injured": false,
+          "injury_status": null
+        }
+      ],
+      "injuries": [
+        {
+          "name": "Charles-Alexis Legault",
+          "player_id": 31248,
+          "status": "IR",
+          "position": "Injured Reserve 1"
+        },
+        {
+          "name": "Pyotr Kochetkov",
+          "player_id": 30486,
+          "status": "IR",
+          "position": "Injured Reserve 2"
+        },
+        {
+          "name": "Eric Robinson",
+          "player_id": 4650,
+          "status": "OUT",
+          "position": "Injured Reserve 3"
+        }
+      ],
+      "total_players": 41,
+      "fetched_at": "2026-02-05T18:59:16.348513+00:00"
+    },
+    "LAK": {
+      "team": "LAK",
+      "last_updated": "2026-02-05T15:54:15.290Z",
+      "goalies": [
+        {
+          "name": "Anton Forsberg",
+          "player_id": 2394,
+          "jersey": 31,
+          "injured": false,
+          "injury_status": null
+        },
+        {
+          "name": "Darcy Kuemper",
+          "player_id": 1692,
+          "jersey": 35,
+          "injured": false,
+          "injury_status": null
+        }
+      ],
+      "injuries": [
+        {
+          "name": "Alex Turcotte",
+          "player_id": 30420,
+          "status": "IR",
+          "position": "Injured Reserve 1"
+        },
+        {
+          "name": "Artemi Panarin",
+          "player_id": 2519,
+          "status": "OUT",
+          "position": "Injured Reserve 2"
+        },
+        {
+          "name": "Mikey Anderson",
+          "player_id": 25509,
+          "status": "DTD",
+          "position": "Injured Reserve 3"
+        }
+      ],
+      "total_players": 41,
+      "fetched_at": "2026-02-05T18:59:16.416685+00:00"
+    },
+    "VGK": {
+      "team": "VGK",
+      "last_updated": "2026-02-05T15:48:07.513Z",
+      "goalies": [
+        {
+          "name": "Akira Schmid",
+          "player_id": 29148,
+          "jersey": 40,
+          "injured": false,
+          "injury_status": null
+        },
+        {
+          "name": "Adin Hill",
+          "player_id": 2906,
+          "jersey": 33,
+          "injured": false,
+          "injury_status": null
+        }
+      ],
+      "injuries": [
+        {
+          "name": "Alex Pietrangelo",
+          "player_id": 1339,
+          "status": "IR",
+          "position": "Injured Reserve 1"
+        },
+        {
+          "name": "Brett Howden",
+          "player_id": 2660,
+          "status": "IR",
+          "position": "Injured Reserve 2"
+        },
+        {
+          "name": "Brandon Saad",
+          "player_id": 1785,
+          "status": "IR",
+          "position": "Injured Reserve 3"
+        },
+        {
+          "name": "Brayden McNabb",
+          "player_id": 1681,
+          "status": "IR",
+          "position": "Injured Reserve 4"
+        },
+        {
+          "name": "William Karlsson",
+          "player_id": 2387,
+          "status": "IR",
+          "position": "Injured Reserve 5"
+        },
+        {
+          "name": "Carter Hart",
+          "player_id": 3874,
+          "status": "IR",
+          "position": "Injured Reserve 6"
+        },
+        {
+          "name": "Jonas Rondbjerg",
+          "player_id": 28111,
+          "status": "IR",
+          "position": "Injured Reserve 7"
+        },
+        {
+          "name": "Colton Sissons",
+          "player_id": 2030,
+          "status": "OUT",
+          "position": "Injured Reserve 8"
+        }
+      ],
+      "total_players": 46,
+      "fetched_at": "2026-02-05T18:59:16.479959+00:00"
+    }
+  },
+  "critical_injuries": [
+    {
+      "team": "NYR",
+      "player": "Igor Shesterkin",
+      "position": "G",
+      "status": "IR"
+    }
+  ]
+}

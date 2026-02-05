@@ -8,10 +8,52 @@ import numpy as np
 import pickle
 import requests
 import os
+import json
+import subprocess
 from datetime import datetime, date
 
 DATA_DIR = os.path.join(os.path.dirname(__file__), '../../data')
 MODEL_DIR = os.path.join(os.path.dirname(__file__), '../../models/trained')
+ROSTER_SCRIPT = os.path.join(os.path.dirname(__file__), '../collect/daily_faceoff_rosters.py')
+
+
+def check_roster_injuries(teams: list) -> dict:
+    """
+    Check for injured goalies on teams playing today.
+    Returns dict of team -> injury info for teams with goalie injuries.
+    """
+    # Run roster collector for specific teams
+    try:
+        result = subprocess.run(
+            ['python', ROSTER_SCRIPT] + list(teams),
+            capture_output=True,
+            text=True,
+            timeout=120
+        )
+    except Exception as e:
+        print(f"⚠️  Roster check failed: {e}")
+        return {}
+    
+    # Load the saved roster data
+    roster_file = os.path.join(DATA_DIR, 'rosters/daily_faceoff_rosters.json')
+    if not os.path.exists(roster_file):
+        return {}
+    
+    with open(roster_file, 'r') as f:
+        data = json.load(f)
+    
+    # Find teams with injured goalies
+    goalie_injuries = {}
+    for team, roster in data.get('teams', {}).items():
+        if 'goalies' in roster:
+            injured_goalies = [g for g in roster['goalies'] if g.get('injured')]
+            if injured_goalies:
+                goalie_injuries[team] = {
+                    'injured_goalies': injured_goalies,
+                    'all_injuries': roster.get('injuries', [])
+                }
+    
+    return goalie_injuries
 
 def load_model():
     """Load trained model"""
@@ -281,6 +323,21 @@ def main():
     games = get_todays_games()
     print(f"\nFound {len(games)} games today")
     
+    # Check roster/injuries for all teams playing today
+    all_teams = set()
+    for g in games:
+        all_teams.add(g['home_team'])
+        all_teams.add(g['away_team'])
+    
+    print(f"\n🔍 Checking rosters for {len(all_teams)} teams...")
+    goalie_injuries = check_roster_injuries(all_teams)
+    
+    if goalie_injuries:
+        print("\n⚠️  GOALIE INJURIES DETECTED:")
+        for team, info in goalie_injuries.items():
+            for g in info['injured_goalies']:
+                print(f"   {team}: {g['name']} ({g.get('injury_status', 'OUT')})")
+    
     # Get current odds
     odds_map = get_current_odds()
     
@@ -370,8 +427,19 @@ def main():
     
     if value_plays:
         for vp in sorted(value_plays, key=lambda x: -x['edge']):
-            print(f"{vp['game']}: {vp['pick']} ({vp['odds']:+d})")
+            # Check if either team has injured goalie
+            game_teams = vp['game'].replace(' @ ', '@').split('@')
+            has_goalie_injury = any(t in goalie_injuries for t in game_teams)
+            
+            injury_flag = " ⚠️ GOALIE OUT" if has_goalie_injury else ""
+            print(f"{vp['game']}: {vp['pick']} ({vp['odds']:+d}){injury_flag}")
             print(f"  Model: {vp['model']:.1%} | Market: {vp['market']:.1%} | Edge: {vp['edge']:+.1f}%")
+            
+            if has_goalie_injury:
+                for t in game_teams:
+                    if t in goalie_injuries:
+                        for g in goalie_injuries[t]['injured_goalies']:
+                            print(f"  ⚠️  {t} missing: {g['name']} ({g.get('injury_status', 'OUT')})")
         
         # Log to Google Sheet (clears duplicates first)
         try:
