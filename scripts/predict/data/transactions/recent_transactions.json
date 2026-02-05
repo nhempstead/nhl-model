@@ -1,24 +1,68 @@
 {
-  "fetched_at": "2026-02-05T19:09:48.677601+00:00",
+  "fetched_at": "2026-02-05T22:00:13.027485+00:00",
   "days": 3,
   "teams_filter": [
-    "NYR",
-    "NYI",
-    "PIT",
+    "LAK",
+    "PHI",
+    "BUF",
     "CAR",
     "NSH",
-    "TBL",
     "WSH",
-    "LAK",
-    "OTT",
-    "BUF",
-    "VGK",
-    "FLA",
+    "NYI",
     "NJD",
-    "PHI"
+    "OTT",
+    "TBL",
+    "FLA",
+    "PIT",
+    "VGK",
+    "NYR"
   ],
-  "count": 15,
+  "count": 11,
   "transactions": [
+    {
+      "date": "2026-02-05",
+      "team": "FLA",
+      "text": "Placed D Tobias Bjornfot on injured reserve. Recalled D Mikulas Hovorka from Charlotte (AHL).",
+      "type": "IR",
+      "players": [
+        {
+          "position": "D",
+          "name": "Tobias Bjornfot"
+        },
+        {
+          "position": "D",
+          "name": "Mikulas Hovorka"
+        }
+      ]
+    },
+    {
+      "date": "2026-02-05",
+      "team": "WSH",
+      "text": "Activated D Logan Thompson from injured reserve. Assigned G Garin Bjorklund to Hershey (AHL).",
+      "type": "IR",
+      "players": [
+        {
+          "position": "D",
+          "name": "Logan Thompson"
+        },
+        {
+          "position": "G",
+          "name": "Garin Bjorklund"
+        }
+      ]
+    },
+    {
+      "date": "2026-02-05",
+      "team": "PIT",
+      "text": "Recalled F Avery Hayes from Wilkes-Barre/Scranton (AHL).",
+      "type": "ROSTER",
+      "players": [
+        {
+          "position": "F",
+          "name": "Avery Hayes"
+        }
+      ]
+    },
     {
       "date": "2026-02-04",
       "team": "NSH",
@@ -138,89 +182,6 @@
         {
           "position": "D",
           "name": "Andreas Englund"
-        }
-      ]
-    },
-    {
-      "date": "2026-02-02",
-      "team": "VGK",
-      "text": "Placed F Jonas Rondbjerg on injured reserve.",
-      "type": "IR",
-      "players": [
-        {
-          "position": "F",
-          "name": "Jonas Rondbjerg"
-        }
-      ]
-    },
-    {
-      "date": "2026-02-02",
-      "team": "NSH",
-      "text": "Announced the retirement of general manager Barry Trotz.",
-      "type": "RETIREMENT",
-      "players": []
-    },
-    {
-      "date": "2026-02-02",
-      "team": "WSH",
-      "text": "Placed G Logan Thompson on injured reserve.",
-      "type": "IR",
-      "players": [
-        {
-          "position": "G",
-          "name": "Logan Thompson"
-        }
-      ]
-    },
-    {
-      "date": "2026-02-02",
-      "team": "PIT",
-      "text": "Reinstated D Ryan Graves from injured reserve.",
-      "type": "IR",
-      "players": [
-        {
-          "position": "D",
-          "name": "Ryan Graves"
-        }
-      ]
-    },
-    {
-      "date": "2026-02-02",
-      "team": "PHI",
-      "text": "Recalled G Alexei Kolosov from Lehigh Valley (AHL).",
-      "type": "ROSTER",
-      "players": [
-        {
-          "position": "G",
-          "name": "Alexei Kolosov"
-        }
-      ]
-    },
-    {
-      "date": "2026-02-02",
-      "team": "CAR",
-      "text": "Reinstated D Charles-Alexis Legault from injured reserve and sent him to Chicago (AHL).",
-      "type": "IR",
-      "players": [
-        {
-          "position": "D",
-          "name": "Charles-Alexis Legault"
-        }
-      ]
-    },
-    {
-      "date": "2026-02-02",
-      "team": "BUF",
-      "text": "Reinstated D Jacob Bryson from injured reserve and placed G Ukko-Pekka Luukkonen on injured reserve.",
-      "type": "IR",
-      "players": [
-        {
-          "position": "D",
-          "name": "Jacob Bryson"
-        },
-        {
-          "position": "G",
-          "name": "Ukko-Pekka Luukkonen"
         }
       ]
     }
