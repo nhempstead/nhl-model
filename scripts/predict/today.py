@@ -15,6 +15,7 @@ from datetime import datetime, date
 DATA_DIR = os.path.join(os.path.dirname(__file__), '../../data')
 MODEL_DIR = os.path.join(os.path.dirname(__file__), '../../models/trained')
 ROSTER_SCRIPT = os.path.join(os.path.dirname(__file__), '../collect/daily_faceoff_rosters.py')
+NHL_ROSTER_SCRIPT = os.path.join(os.path.dirname(__file__), '../collect/nhl_rosters.py')
 
 
 def check_roster_injuries(teams: list) -> dict:
@@ -77,6 +78,33 @@ def check_transactions(teams: list) -> dict:
         print(f"⚠️  Transaction check failed: {e}")
     
     return {'transactions': []}
+
+
+def refresh_nhl_rosters(teams: list) -> dict:
+    """
+    Refresh official NHL rosters for teams playing today.
+    Returns dict of team -> roster data.
+    """
+    try:
+        result = subprocess.run(
+            ['python', NHL_ROSTER_SCRIPT] + list(teams),
+            capture_output=True,
+            text=True,
+            timeout=120
+        )
+    except Exception as e:
+        print(f"⚠️  NHL roster refresh failed: {e}")
+        return {}
+    
+    # Load the saved roster data
+    roster_file = os.path.join(DATA_DIR, 'rosters/nhl_rosters.json')
+    if not os.path.exists(roster_file):
+        return {}
+    
+    with open(roster_file, 'r') as f:
+        data = json.load(f)
+    
+    return data.get('teams', {})
 
 def load_model():
     """Load trained model"""
@@ -372,6 +400,13 @@ def main():
             print(f"   {t['team']}: {t['text'][:70]}...")
             if t.get('trade_partner'):
                 print(f"      ↔️  Trade with: {t['trade_partner']}")
+    
+    # Refresh official NHL rosters
+    print(f"\n📋 Refreshing official NHL rosters...")
+    nhl_rosters = refresh_nhl_rosters(all_teams)
+    if nhl_rosters:
+        total = sum(r.get('total_players', 0) for r in nhl_rosters.values() if isinstance(r, dict))
+        print(f"   ✓ {total} players across {len(nhl_rosters)} teams")
     
     # Get current odds
     odds_map = get_current_odds()
