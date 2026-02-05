@@ -1,14 +1,114 @@
 {
-  "fetched_at": "2026-02-05T19:05:13.226683+00:00",
+  "fetched_at": "2026-02-05T19:33:09.728416+00:00",
   "days": 3,
-  "teams_filter": [
-    "NYR",
-    "LAK",
-    "VGK",
-    "CAR"
-  ],
-  "count": 5,
+  "teams_filter": null,
+  "count": 25,
   "transactions": [
+    {
+      "date": "2026-02-04",
+      "team": "UTA",
+      "text": "Sent F Daniil But to Tucson (AHL).",
+      "type": "ROSTER",
+      "players": [
+        {
+          "position": "F",
+          "name": "Daniil But"
+        }
+      ]
+    },
+    {
+      "date": "2026-02-04",
+      "team": "SEA",
+      "text": "Placed F Berkly Catton on injured reserve and recalled F Oscar Fisker Molgaard from Coachella Valley (AHL).",
+      "type": "IR",
+      "players": [
+        {
+          "position": "F",
+          "name": "Berkly Catton"
+        },
+        {
+          "position": "F",
+          "name": "Oscar Fisker Molgaard"
+        }
+      ]
+    },
+    {
+      "date": "2026-02-04",
+      "team": "NSH",
+      "text": "Recalled F Reid Schaefer from Milwaukee (AHL).",
+      "type": "ROSTER",
+      "players": [
+        {
+          "position": "F",
+          "name": "Reid Schaefer"
+        }
+      ]
+    },
+    {
+      "date": "2026-02-04",
+      "team": "ANA",
+      "text": "Sent F Tim Washe to San Diego (AHL).",
+      "type": "ROSTER",
+      "players": [
+        {
+          "position": "F",
+          "name": "Tim Washe"
+        }
+      ]
+    },
+    {
+      "date": "2026-02-04",
+      "team": "WSH",
+      "text": "Sent F Bogdan Trineyev to Hershey (AHL).",
+      "type": "ROSTER",
+      "players": [
+        {
+          "position": "F",
+          "name": "Bogdan Trineyev"
+        }
+      ]
+    },
+    {
+      "date": "2026-02-04",
+      "team": "STL",
+      "text": "Acquired F Thomas Bordeleau and a 2026 fourth-round pick from New Jersey Devils for F Nick Bjugstad.",
+      "type": "TRADE",
+      "players": [
+        {
+          "position": "F",
+          "name": "Thomas Bordeleau"
+        },
+        {
+          "position": "F",
+          "name": "Nick Bjugstad"
+        }
+      ],
+      "trade_partner": "NJD"
+    },
+    {
+      "date": "2026-02-04",
+      "team": "SJ",
+      "text": "Activated F Kiefer Sherwood from waivers.",
+      "type": "WAIVER",
+      "players": [
+        {
+          "position": "F",
+          "name": "Kiefer Sherwood"
+        }
+      ]
+    },
+    {
+      "date": "2026-02-04",
+      "team": "PIT",
+      "text": "Sent F Melvin Fernstr\u00f6m to Wilkes-Barre/Scranton (AHL).",
+      "type": "ROSTER",
+      "players": [
+        {
+          "position": "F",
+          "name": "Melvin Fernstr"
+        }
+      ]
+    },
     {
       "date": "2026-02-04",
       "team": "NYR",
@@ -24,6 +124,27 @@
           "name": "Anton Blidh"
         }
       ]
+    },
+    {
+      "date": "2026-02-04",
+      "team": "NJ",
+      "text": "Acquired F Nick Bjugstad from St. Louis in exchange for F Thomas Bordeleau and a 2026 fourth-round pick. Sent F Juho Lammikko to Utica (AHL).",
+      "type": "TRADE",
+      "players": [
+        {
+          "position": "F",
+          "name": "Nick Bjugstad"
+        },
+        {
+          "position": "F",
+          "name": "Thomas Bordeleau"
+        },
+        {
+          "position": "F",
+          "name": "Juho Lammikko"
+        }
+      ],
+      "trade_partner": "BOS"
     },
     {
       "date": "2026-02-04",
@@ -67,6 +188,54 @@
       ]
     },
     {
+      "date": "2026-02-03",
+      "team": "NSH",
+      "text": "Sent D Andreas Englund to Milwaukee (AHL).",
+      "type": "ROSTER",
+      "players": [
+        {
+          "position": "D",
+          "name": "Andreas Englund"
+        }
+      ]
+    },
+    {
+      "date": "2026-02-03",
+      "team": "TB",
+      "text": "Recalled F Scott Sabourin from Syracuse (AHL).",
+      "type": "ROSTER",
+      "players": [
+        {
+          "position": "F",
+          "name": "Scott Sabourin"
+        }
+      ]
+    },
+    {
+      "date": "2026-02-03",
+      "team": "MTL",
+      "text": "Placed F Sammy Blais on waivers.",
+      "type": "WAIVER",
+      "players": [
+        {
+          "position": "F",
+          "name": "Sammy Blais"
+        }
+      ]
+    },
+    {
+      "date": "2026-02-03",
+      "team": "LA",
+      "text": "Recalled D Joe Hicketts from Ontario (AHL).",
+      "type": "ROSTER",
+      "players": [
+        {
+          "position": "D",
+          "name": "Joe Hicketts"
+        }
+      ]
+    },
+    {
       "date": "2026-02-02",
       "team": "VGK",
       "text": "Placed F Jonas Rondbjerg on injured reserve.",
@@ -80,6 +249,69 @@
     },
     {
       "date": "2026-02-02",
+      "team": "MIN",
+      "text": "Sent D Matt Kiersted to Iowa (AHL) and recalled G Cal Petersen from Iowa. Reinstated D Zach Bogosian from injured reserve.",
+      "type": "IR",
+      "players": [
+        {
+          "position": "D",
+          "name": "Matt Kiersted"
+        },
+        {
+          "position": "G",
+          "name": "Cal Petersen"
+        },
+        {
+          "position": "D",
+          "name": "Zach Bogosian"
+        }
+      ]
+    },
+    {
+      "date": "2026-02-02",
+      "team": "NSH",
+      "text": "Announced the retirement of general manager Barry Trotz.",
+      "type": "RETIREMENT",
+      "players": []
+    },
+    {
+      "date": "2026-02-02",
+      "team": "WSH",
+      "text": "Placed G Logan Thompson on injured reserve.",
+      "type": "IR",
+      "players": [
+        {
+          "position": "G",
+          "name": "Logan Thompson"
+        }
+      ]
+    },
+    {
+      "date": "2026-02-02",
+      "team": "PIT",
+      "text": "Reinstated D Ryan Graves from injured reserve.",
+      "type": "IR",
+      "players": [
+        {
+          "position": "D",
+          "name": "Ryan Graves"
+        }
+      ]
+    },
+    {
+      "date": "2026-02-02",
+      "team": "PHI",
+      "text": "Recalled G Alexei Kolosov from Lehigh Valley (AHL).",
+      "type": "ROSTER",
+      "players": [
+        {
+          "position": "G",
+          "name": "Alexei Kolosov"
+        }
+      ]
+    },
+    {
+      "date": "2026-02-02",
       "team": "CAR",
       "text": "Reinstated D Charles-Alexis Legault from injured reserve and sent him to Chicago (AHL).",
       "type": "IR",
@@ -87,6 +319,38 @@
         {
           "position": "D",
           "name": "Charles-Alexis Legault"
+        }
+      ]
+    },
+    {
+      "date": "2026-02-02",
+      "team": "BUF",
+      "text": "Reinstated D Jacob Bryson from injured reserve and placed G Ukko-Pekka Luukkonen on injured reserve.",
+      "type": "IR",
+      "players": [
+        {
+          "position": "D",
+          "name": "Jacob Bryson"
+        },
+        {
+          "position": "G",
+          "name": "Ukko-Pekka Luukkonen"
+        }
+      ]
+    },
+    {
+      "date": "2026-02-02",
+      "team": "BOS",
+      "text": "Placed C Elias Lindholm on injured reserve and reinstated D Jordan Harris from long-term injured reserve.",
+      "type": "IR",
+      "players": [
+        {
+          "position": "C",
+          "name": "Elias Lindholm"
+        },
+        {
+          "position": "D",
+          "name": "Jordan Harris"
         }
       ]
     }
