@@ -1,0 +1,94 @@
+{
+  "fetched_at": "2026-02-05T19:05:13.226683+00:00",
+  "days": 3,
+  "teams_filter": [
+    "NYR",
+    "LAK",
+    "VGK",
+    "CAR"
+  ],
+  "count": 5,
+  "transactions": [
+    {
+      "date": "2026-02-04",
+      "team": "NYR",
+      "text": "Sent D Connor Mackey to Hartford (AHL). Recalled LW Anton Blidh from Hartford.",
+      "type": "ROSTER",
+      "players": [
+        {
+          "position": "D",
+          "name": "Connor Mackey"
+        },
+        {
+          "position": "LW",
+          "name": "Anton Blidh"
+        }
+      ]
+    },
+    {
+      "date": "2026-02-04",
+      "team": "LA",
+      "text": "Acquired F Artemi Panarin from the New York Rangers in exchange for F Liam Greentree and two conditional 2026 third-round picks. Signed F Artemi Panarin to a two-year contract.",
+      "type": "TRADE",
+      "players": [
+        {
+          "position": "F",
+          "name": "Artemi Panarin"
+        },
+        {
+          "position": "F",
+          "name": "Liam Greentree"
+        },
+        {
+          "position": "F",
+          "name": "Artemi Panarin"
+        }
+      ],
+      "trade_partner": "NYR"
+    },
+    {
+      "date": "2026-02-03",
+      "team": "VGK",
+      "text": "Sent D Dylan Coghlan and F Tanner Laczynski to Henderson (AHL) and recalled F Kai Uchacz from Henderson.",
+      "type": "ROSTER",
+      "players": [
+        {
+          "position": "D",
+          "name": "Dylan Coghlan"
+        },
+        {
+          "position": "F",
+          "name": "Tanner Laczynski"
+        },
+        {
+          "position": "F",
+          "name": "Kai Uchacz"
+        }
+      ]
+    },
+    {
+      "date": "2026-02-02",
+      "team": "VGK",
+      "text": "Placed F Jonas Rondbjerg on injured reserve.",
+      "type": "IR",
+      "players": [
+        {
+          "position": "F",
+          "name": "Jonas Rondbjerg"
+        }
+      ]
+    },
+    {
+      "date": "2026-02-02",
+      "team": "CAR",
+      "text": "Reinstated D Charles-Alexis Legault from injured reserve and sent him to Chicago (AHL).",
+      "type": "IR",
+      "players": [
+        {
+          "position": "D",
+          "name": "Charles-Alexis Legault"
+        }
+      ]
+    }
+  ]
+}

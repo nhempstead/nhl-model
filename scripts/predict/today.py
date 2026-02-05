@@ -55,6 +55,29 @@ def check_roster_injuries(teams: list) -> dict:
     
     return goalie_injuries
 
+
+def check_transactions(teams: list) -> dict:
+    """
+    Check recent transactions (trades, IR) for teams playing today.
+    Returns dict with trades and high-impact moves.
+    """
+    trans_script = os.path.join(os.path.dirname(__file__), '../collect/nhl_transactions.py')
+    
+    try:
+        result = subprocess.run(
+            ['python', trans_script, '--days', '3', '--teams'] + list(teams) + ['--json'],
+            capture_output=True,
+            text=True,
+            timeout=30
+        )
+        if result.returncode == 0:
+            data = json.loads(result.stdout)
+            return data
+    except Exception as e:
+        print(f"⚠️  Transaction check failed: {e}")
+    
+    return {'transactions': []}
+
 def load_model():
     """Load trained model"""
     path = os.path.join(MODEL_DIR, 'model_v1.pkl')
@@ -337,6 +360,18 @@ def main():
         for team, info in goalie_injuries.items():
             for g in info['injured_goalies']:
                 print(f"   {team}: {g['name']} ({g.get('injury_status', 'OUT')})")
+    
+    # Check recent transactions
+    print(f"\n📰 Checking recent transactions...")
+    trans_data = check_transactions(all_teams)
+    recent_trades = [t for t in trans_data.get('transactions', []) if t.get('type') == 'TRADE']
+    
+    if recent_trades:
+        print("\n🔄 RECENT TRADES AFFECTING TODAY'S GAMES:")
+        for t in recent_trades:
+            print(f"   {t['team']}: {t['text'][:70]}...")
+            if t.get('trade_partner'):
+                print(f"      ↔️  Trade with: {t['trade_partner']}")
     
     # Get current odds
     odds_map = get_current_odds()
