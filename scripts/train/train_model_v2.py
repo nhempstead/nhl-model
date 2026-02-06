@@ -35,11 +35,15 @@ MARKET_LOGLOSS = 0.6367
 
 def load_data():
     """Load processed matchup data with all features."""
-    # Try full-featured first
+    # Try V3 (most features) first
+    v3_path = DATA_DIR / 'processed' / 'matchups_v3.csv'
     full_path = DATA_DIR / 'processed' / 'matchups_with_all_features.csv'
     schedule_path = DATA_DIR / 'processed' / 'matchups_with_schedule.csv'
     
-    if full_path.exists():
+    if v3_path.exists():
+        df = pd.read_csv(v3_path)
+        print(f"Loaded V3 data: {len(df)} games")
+    elif full_path.exists():
         df = pd.read_csv(full_path)
         print(f"Loaded full-featured data: {len(df)} games")
     elif schedule_path.exists():
@@ -206,8 +210,10 @@ def main():
     # Check for new features
     schedule_features = [c for c in feature_cols if any(x in c for x in ['b2b', 'rest', 'travel', 'tz_change', 'fatigue'])]
     goalie_features = [c for c in feature_cols if 'goalie' in c.lower()]
-    print(f"Schedule features: {schedule_features}")
-    print(f"Goalie features: {goalie_features}")
+    depth_features = [c for c in feature_cols if any(x in c for x in ['depth', 'backup', 'starter_share'])]
+    print(f"Schedule features ({len(schedule_features)}): {schedule_features}")
+    print(f"Goalie features ({len(goalie_features)}): {goalie_features}")
+    print(f"Depth features ({len(depth_features)}): {depth_features}")
     
     # Walk-forward split - train on older, test on recent
     # Train: 2008-2022, Val: 2023, Test: 2024-2025
