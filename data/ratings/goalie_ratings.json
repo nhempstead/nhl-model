@@ -1,0 +1,229 @@
+{
+  "generated": "2026-02-06T14:47:37.609565",
+  "ratings": {
+    "ANA": {
+      "goalie": "Lukas Dostal",
+      "rating": 45.6,
+      "sv_pct": 0.897,
+      "gsax": 3.66,
+      "games": 38
+    },
+    "BOS": {
+      "goalie": "Jeremy Swayman",
+      "rating": 53.1,
+      "sv_pct": 0.903,
+      "gsax": 16.2,
+      "games": 38
+    },
+    "BUF": {
+      "goalie": "Alex Lyon",
+      "rating": 62.4,
+      "sv_pct": 0.914,
+      "gsax": 11.07,
+      "games": 26
+    },
+    "CAR": {
+      "goalie": "Brandon Bussi",
+      "rating": 53.3,
+      "sv_pct": 0.904,
+      "gsax": 8.87,
+      "games": 26
+    },
+    "CBJ": {
+      "goalie": "Jet Greaves",
+      "rating": 58.7,
+      "sv_pct": 0.91,
+      "gsax": 14.7,
+      "games": 37
+    },
+    "CGY": {
+      "goalie": "Dustin Wolf",
+      "rating": 42.0,
+      "sv_pct": 0.895,
+      "gsax": -4.08,
+      "games": 41
+    },
+    "CHI": {
+      "goalie": "Spencer Knight",
+      "rating": 55.3,
+      "sv_pct": 0.908,
+      "gsax": 9.98,
+      "games": 39
+    },
+    "COL": {
+      "goalie": "Scott Wedgewood",
+      "rating": 57.9,
+      "sv_pct": 0.912,
+      "gsax": 5.66,
+      "games": 31
+    },
+    "DAL": {
+      "goalie": "Jake Oettinger",
+      "rating": 44.0,
+      "sv_pct": 0.897,
+      "gsax": -0.95,
+      "games": 37
+    },
+    "DET": {
+      "goalie": "John Gibson",
+      "rating": 52.0,
+      "sv_pct": 0.904,
+      "gsax": 8.1,
+      "games": 37
+    },
+    "EDM": {
+      "goalie": "Tristan Jarry",
+      "rating": 43.2,
+      "sv_pct": 0.893,
+      "gsax": 4.31,
+      "games": 25
+    },
+    "FLA": {
+      "goalie": "Sergei Bobrovsky",
+      "rating": 20.7,
+      "sv_pct": 0.872,
+      "gsax": -13.47,
+      "games": 39
+    },
+    "LAK": {
+      "goalie": "Darcy Kuemper",
+      "rating": 47.4,
+      "sv_pct": 0.9,
+      "gsax": 2.08,
+      "games": 36
+    },
+    "MIN": {
+      "goalie": "Filip Gustavsson",
+      "rating": 52.6,
+      "sv_pct": 0.906,
+      "gsax": 2.99,
+      "games": 36
+    },
+    "MTL": {
+      "goalie": "Jakub Dobes",
+      "rating": 40.0,
+      "sv_pct": 0.892,
+      "gsax": 0.18,
+      "games": 27
+    },
+    "NJD": {
+      "goalie": "Jacob Markstrom",
+      "rating": 28.9,
+      "sv_pct": 0.882,
+      "gsax": -10.95,
+      "games": 30
+    },
+    "NSH": {
+      "goalie": "Juuse Saros",
+      "rating": 37.3,
+      "sv_pct": 0.892,
+      "gsax": -12.95,
+      "games": 44
+    },
+    "NYI": {
+      "goalie": "Ilya Sorokin",
+      "rating": 66.5,
+      "sv_pct": 0.915,
+      "gsax": 26.04,
+      "games": 34
+    },
+    "NYR": {
+      "goalie": "Igor Shesterkin",
+      "rating": 61.9,
+      "sv_pct": 0.913,
+      "gsax": 15.55,
+      "games": 34
+    },
+    "OTT": {
+      "goalie": "Linus Ullmark",
+      "rating": 27.5,
+      "sv_pct": 0.884,
+      "gsax": -17.52,
+      "games": 30
+    },
+    "PHI": {
+      "goalie": "Dan Vladar",
+      "rating": 51.9,
+      "sv_pct": 0.904,
+      "gsax": 6.78,
+      "games": 32
+    },
+    "PIT": {
+      "goalie": "Stuart Skinner",
+      "rating": 39.9,
+      "sv_pct": 0.89,
+      "gsax": 4.74,
+      "games": 36
+    },
+    "SEA": {
+      "goalie": "Joey Daccord",
+      "rating": 49.0,
+      "sv_pct": 0.903,
+      "gsax": 0.97,
+      "games": 33
+    },
+    "SJS": {
+      "goalie": "Yaroslav Askarov",
+      "rating": 34.3,
+      "sv_pct": 0.888,
+      "gsax": -9.22,
+      "games": 35
+    },
+    "STL": {
+      "goalie": "Jordan Binnington",
+      "rating": 10.0,
+      "sv_pct": 0.864,
+      "gsax": -24.93,
+      "games": 32
+    },
+    "TBL": {
+      "goalie": "Andrei Vasilevskiy",
+      "rating": 65.7,
+      "sv_pct": 0.917,
+      "gsax": 19.61,
+      "games": 36
+    },
+    "TOR": {
+      "goalie": "Joseph Woll",
+      "rating": 52.3,
+      "sv_pct": 0.909,
+      "gsax": -2.61,
+      "games": 25
+    },
+    "UTA": {
+      "goalie": "Karel Vejmelka",
+      "rating": 50.8,
+      "sv_pct": 0.902,
+      "gsax": 11.25,
+      "games": 44
+    },
+    "VAN": {
+      "goalie": "Kevin Lankinen",
+      "rating": 24.1,
+      "sv_pct": 0.876,
+      "gsax": -9.89,
+      "games": 32
+    },
+    "VGK": {
+      "goalie": "Akira Schmid",
+      "rating": 42.7,
+      "sv_pct": 0.895,
+      "gsax": 0.63,
+      "games": 29
+    },
+    "WPG": {
+      "goalie": "Connor Hellebuyck",
+      "rating": 48.5,
+      "sv_pct": 0.9,
+      "gsax": 7.21,
+      "games": 36
+    },
+    "WSH": {
+      "goalie": "Logan Thompson",
+      "rating": 60.4,
+      "sv_pct": 0.912,
+      "gsax": 16.72,
+      "games": 38
+    }
+  }
+}

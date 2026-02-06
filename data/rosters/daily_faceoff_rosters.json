@@ -1,5 +1,5 @@
 {
-  "fetched_at": "2026-02-05T19:38:28.190999+00:00",
+  "fetched_at": "2026-02-06T15:00:15.612133+00:00",
   "teams": {
     "ANA": {
       "team": "ANA",
@@ -41,7 +41,7 @@
         }
       ],
       "total_players": 41,
-      "fetched_at": "2026-02-05T19:38:25.560333+00:00"
+      "fetched_at": "2026-02-06T15:00:12.963752+00:00"
     },
     "ARI": {
       "team": "ARI",
@@ -77,7 +77,7 @@
         }
       ],
       "total_players": 40,
-      "fetched_at": "2026-02-05T19:38:25.690102+00:00"
+      "fetched_at": "2026-02-06T15:00:13.073166+00:00"
     },
     "BOS": {
       "team": "BOS",
@@ -119,11 +119,11 @@
         }
       ],
       "total_players": 41,
-      "fetched_at": "2026-02-05T19:38:25.763176+00:00"
+      "fetched_at": "2026-02-06T15:00:13.145230+00:00"
     },
     "BUF": {
       "team": "BUF",
-      "last_updated": "2026-02-05T16:00:17.258Z",
+      "last_updated": "2026-02-05T23:44:17.404Z",
       "goalies": [
         {
           "name": "Alex Lyon",
@@ -185,7 +185,7 @@
         }
       ],
       "total_players": 45,
-      "fetched_at": "2026-02-05T19:38:25.993012+00:00"
+      "fetched_at": "2026-02-06T15:00:13.205937+00:00"
     },
     "CGY": {
       "team": "CGY",
@@ -239,11 +239,11 @@
         }
       ],
       "total_players": 43,
-      "fetched_at": "2026-02-05T19:38:26.059763+00:00"
+      "fetched_at": "2026-02-06T15:00:13.270186+00:00"
     },
     "CAR": {
       "team": "CAR",
-      "last_updated": "2026-02-05T17:11:16.005Z",
+      "last_updated": "2026-02-05T20:10:18.807Z",
       "goalies": [
         {
           "name": "Brandon Bussi",
@@ -281,7 +281,7 @@
         }
       ],
       "total_players": 41,
-      "fetched_at": "2026-02-05T19:38:26.151732+00:00"
+      "fetched_at": "2026-02-06T15:00:13.351156+00:00"
     },
     "CHI": {
       "team": "CHI",
@@ -317,7 +317,7 @@
         }
       ],
       "total_players": 40,
-      "fetched_at": "2026-02-05T19:38:26.217612+00:00"
+      "fetched_at": "2026-02-06T15:00:13.430217+00:00"
     },
     "COL": {
       "team": "COL",
@@ -359,7 +359,7 @@
         }
       ],
       "total_players": 41,
-      "fetched_at": "2026-02-05T19:38:26.284161+00:00"
+      "fetched_at": "2026-02-06T15:00:13.503705+00:00"
     },
     "CBJ": {
       "team": "CBJ",
@@ -395,7 +395,7 @@
         }
       ],
       "total_players": 40,
-      "fetched_at": "2026-02-05T19:38:26.349513+00:00"
+      "fetched_at": "2026-02-06T15:00:13.560958+00:00"
     },
     "DAL": {
       "team": "DAL",
@@ -431,7 +431,7 @@
         }
       ],
       "total_players": 40,
-      "fetched_at": "2026-02-05T19:38:26.420285+00:00"
+      "fetched_at": "2026-02-06T15:00:13.636680+00:00"
     },
     "DET": {
       "team": "DET",
@@ -461,7 +461,7 @@
         }
       ],
       "total_players": 39,
-      "fetched_at": "2026-02-05T19:38:26.483851+00:00"
+      "fetched_at": "2026-02-06T15:00:13.690681+00:00"
     },
     "EDM": {
       "team": "EDM",
@@ -491,11 +491,11 @@
         }
       ],
       "total_players": 39,
-      "fetched_at": "2026-02-05T19:38:26.613564+00:00"
+      "fetched_at": "2026-02-06T15:00:13.796433+00:00"
     },
     "FLA": {
       "team": "FLA",
-      "last_updated": "2026-02-05T18:12:05.914Z",
+      "last_updated": "2026-02-06T00:08:26.879Z",
       "goalies": [
         {
           "name": "Daniil Tarasov",
@@ -544,20 +544,26 @@
           "position": "Injured Reserve 5"
         },
         {
-          "name": "Tomas Nosek",
-          "player_id": 2423,
+          "name": "Aaron Ekblad",
+          "player_id": 2363,
           "status": "DTD",
           "position": "Injured Reserve 6"
         },
         {
-          "name": "Sandis Vilmanis",
-          "player_id": 36428,
+          "name": "Evan Rodrigues",
+          "player_id": 2620,
           "status": "DTD",
           "position": "Injured Reserve 7"
+        },
+        {
+          "name": "Brad Marchand",
+          "player_id": 124,
+          "status": "DTD",
+          "position": "Injured Reserve 8"
         }
       ],
-      "total_players": 45,
-      "fetched_at": "2026-02-05T19:38:26.696950+00:00"
+      "total_players": 46,
+      "fetched_at": "2026-02-06T15:00:13.859347+00:00"
     },
     "LAK": {
       "team": "LAK",
@@ -599,7 +605,7 @@
         }
       ],
       "total_players": 41,
-      "fetched_at": "2026-02-05T19:38:26.769115+00:00"
+      "fetched_at": "2026-02-06T15:00:13.959414+00:00"
     },
     "MIN": {
       "team": "MIN",
@@ -629,7 +635,7 @@
         }
       ],
       "total_players": 39,
-      "fetched_at": "2026-02-05T19:38:26.842897+00:00"
+      "fetched_at": "2026-02-06T15:00:14.018671+00:00"
     },
     "MTL": {
       "team": "MTL",
@@ -677,11 +683,11 @@
         }
       ],
       "total_players": 42,
-      "fetched_at": "2026-02-05T19:38:26.930969+00:00"
+      "fetched_at": "2026-02-06T15:00:14.078029+00:00"
     },
     "NSH": {
       "team": "NSH",
-      "last_updated": "2026-02-05T15:27:46.074Z",
+      "last_updated": "2026-02-05T23:41:44.174Z",
       "goalies": [
         {
           "name": "Juuse Saros",
@@ -700,11 +706,11 @@
       ],
       "injuries": [],
       "total_players": 38,
-      "fetched_at": "2026-02-05T19:38:27.002921+00:00"
+      "fetched_at": "2026-02-06T15:00:14.148608+00:00"
     },
     "NJD": {
       "team": "NJD",
-      "last_updated": "2026-02-04T15:14:12.685Z",
+      "last_updated": "2026-02-05T23:46:31.785Z",
       "goalies": [
         {
           "name": "Jake Allen",
@@ -748,7 +754,7 @@
         }
       ],
       "total_players": 42,
-      "fetched_at": "2026-02-05T19:38:27.066332+00:00"
+      "fetched_at": "2026-02-06T15:00:14.225174+00:00"
     },
     "NYI": {
       "team": "NYI",
@@ -796,11 +802,11 @@
         }
       ],
       "total_players": 42,
-      "fetched_at": "2026-02-05T19:38:27.217754+00:00"
+      "fetched_at": "2026-02-06T15:00:14.300089+00:00"
     },
     "NYR": {
       "team": "NYR",
-      "last_updated": "2026-02-04T16:12:34.041Z",
+      "last_updated": "2026-02-05T21:42:12.687Z",
       "goalies": [
         {
           "name": "Jonathan Quick",
@@ -848,32 +854,26 @@
           "player_id": 25267,
           "status": "IR",
           "position": "Injured Reserve 4"
-        },
-        {
-          "name": "Artemi Panarin",
-          "player_id": 2519,
-          "status": "OUT",
-          "position": "Injured Reserve 5"
         }
       ],
-      "total_players": 43,
-      "fetched_at": "2026-02-05T19:38:27.286244+00:00"
+      "total_players": 42,
+      "fetched_at": "2026-02-06T15:00:14.362391+00:00"
     },
     "OTT": {
       "team": "OTT",
       "last_updated": "2026-02-05T17:27:41.719Z",
       "goalies": [
         {
-          "name": "Linus Ullmark",
-          "player_id": 2534,
-          "jersey": 35,
+          "name": "James Reimer",
+          "player_id": 1438,
+          "jersey": 47,
           "injured": false,
           "injury_status": null
         },
         {
-          "name": "James Reimer",
-          "player_id": 1438,
-          "jersey": 47,
+          "name": "Hunter Shepard",
+          "player_id": 34607,
+          "jersey": 31,
           "injured": false,
           "injury_status": null
         }
@@ -890,10 +890,16 @@
           "player_id": 30030,
           "status": "DTD",
           "position": "Injured Reserve 2"
+        },
+        {
+          "name": "Linus Ullmark",
+          "player_id": 2534,
+          "status": "DTD",
+          "position": "Injured Reserve 3"
         }
       ],
-      "total_players": 40,
-      "fetched_at": "2026-02-05T19:38:27.346628+00:00"
+      "total_players": 41,
+      "fetched_at": "2026-02-06T15:00:14.438176+00:00"
     },
     "PHI": {
       "team": "PHI",
@@ -935,11 +941,11 @@
         }
       ],
       "total_players": 41,
-      "fetched_at": "2026-02-05T19:38:27.434143+00:00"
+      "fetched_at": "2026-02-06T15:00:14.505223+00:00"
     },
     "PIT": {
       "team": "PIT",
-      "last_updated": "2026-02-05T18:54:24.917Z",
+      "last_updated": "2026-02-05T23:43:27.690Z",
       "goalies": [
         {
           "name": "Stuart Skinner",
@@ -1007,7 +1013,7 @@
         }
       ],
       "total_players": 46,
-      "fetched_at": "2026-02-05T19:38:27.498674+00:00"
+      "fetched_at": "2026-02-06T15:00:14.564229+00:00"
     },
     "SJS": {
       "team": "SJS",
@@ -1043,7 +1049,7 @@
         }
       ],
       "total_players": 40,
-      "fetched_at": "2026-02-05T19:38:27.565801+00:00"
+      "fetched_at": "2026-02-06T15:00:14.622958+00:00"
     },
     "SEA": {
       "team": "SEA",
@@ -1091,7 +1097,7 @@
         }
       ],
       "total_players": 42,
-      "fetched_at": "2026-02-05T19:38:27.625826+00:00"
+      "fetched_at": "2026-02-06T15:00:14.767156+00:00"
     },
     "STL": {
       "team": "STL",
@@ -1127,7 +1133,7 @@
         }
       ],
       "total_players": 40,
-      "fetched_at": "2026-02-05T19:38:27.692126+00:00"
+      "fetched_at": "2026-02-06T15:00:15.068423+00:00"
     },
     "TBL": {
       "team": "TBL",
@@ -1181,7 +1187,7 @@
         }
       ],
       "total_players": 43,
-      "fetched_at": "2026-02-05T19:38:27.752264+00:00"
+      "fetched_at": "2026-02-06T15:00:15.148378+00:00"
     },
     "TOR": {
       "team": "TOR",
@@ -1229,7 +1235,7 @@
         }
       ],
       "total_players": 42,
-      "fetched_at": "2026-02-05T19:38:27.823386+00:00"
+      "fetched_at": "2026-02-06T15:00:15.225344+00:00"
     },
     "UTA": {
       "team": "UTA",
@@ -1265,7 +1271,7 @@
         }
       ],
       "total_players": 40,
-      "fetched_at": "2026-02-05T19:38:27.916965+00:00"
+      "fetched_at": "2026-02-06T15:00:15.324604+00:00"
     },
     "VAN": {
       "team": "VAN",
@@ -1325,7 +1331,7 @@
         }
       ],
       "total_players": 44,
-      "fetched_at": "2026-02-05T19:38:27.970440+00:00"
+      "fetched_at": "2026-02-06T15:00:15.398034+00:00"
     },
     "VGK": {
       "team": "VGK",
@@ -1397,11 +1403,11 @@
         }
       ],
       "total_players": 46,
-      "fetched_at": "2026-02-05T19:38:28.056645+00:00"
+      "fetched_at": "2026-02-06T15:00:15.486375+00:00"
     },
     "WSH": {
       "team": "WSH",
-      "last_updated": "2026-02-05T16:05:02.956Z",
+      "last_updated": "2026-02-05T23:38:39.238Z",
       "goalies": [
         {
           "name": "Logan Thompson",
@@ -1439,7 +1445,7 @@
         }
       ],
       "total_players": 41,
-      "fetched_at": "2026-02-05T19:38:28.124877+00:00"
+      "fetched_at": "2026-02-06T15:00:15.549601+00:00"
     },
     "WPG": {
       "team": "WPG",
@@ -1481,7 +1487,7 @@
         }
       ],
       "total_players": 41,
-      "fetched_at": "2026-02-05T19:38:28.190763+00:00"
+      "fetched_at": "2026-02-06T15:00:15.611913+00:00"
     }
   },
   "critical_injuries": [
