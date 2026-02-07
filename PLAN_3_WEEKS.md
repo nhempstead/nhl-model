@@ -8,38 +8,45 @@
 
 ## Week 1: Data & Feature Engineering (Feb 6-12)
 
-### Day 1-2: Historical Goalie Starts
+### Day 1-2: Historical Goalie Starts ✅ COMPLETE
 **Problem:** Using season-level goalie ratings, market uses game-day confirmation
-**Solution:** Scrape historical starting goalie data
+**Solution:** Extracted goalie starts from MoneyPuck shots data
 
-- [ ] Scrape Daily Faceoff archives for 2020-2025 starting goalies
-- [ ] Build game-level goalie features (who actually started, not team average)
-- [ ] Calculate "backup start" indicator (huge edge when market doesn't adjust)
-- [ ] Add goalie rest days (G on B2B is different than skater B2B)
+- [x] Extract starting goalies from shots data (2018-2025, 8,468 games)
+- [x] Build game-level goalie features (who actually started, rest days, shots faced)
+- [x] Calculate "backup start" indicator (~22-25% of games)
+- [x] Add goalie rest days + B2B tracking (1.4% home, 2.8% away B2B)
+
+**Results:**
+- Home backup win rate: 49.8% vs starter 50.5% (-0.7%)
+- Away backup win rate: 48.7% vs starter 50.0% (-1.3%)
+- Edge is in TIMING (15-60 min window before market adjusts)
 
 **Expected Impact:** +1-2% Brier improvement
 
-### Day 3-4: Line Movement Features
+### Day 3-4: Line Movement Features ⏭️ SKIPPED
 **Problem:** We use static closing odds, market moves on information
-**Solution:** Capture line movement as a feature
+**Blocker:** No opening/closing line data available (single snapshot per game in Odds API)
 
-- [ ] Fetch opening lines from The Odds API (we have budget)
-- [ ] Calculate: `line_move = closing_prob - opening_prob`
-- [ ] Reverse line movement indicator (public vs sharp)
-- [ ] Steam move detector (rapid movement = sharp action)
+- [x] Checked historical odds data - only closing lines available
+- [ ] Need live odds tracking for future line movement features
+- [ ] Pivoted to Day 5-6 instead
 
-**Expected Impact:** +0.5-1% Brier improvement
+**Status:** Deferred - need live odds API integration
 
-### Day 5-6: Situational Features
+### Day 5-6: Situational Features ✅ COMPLETE
 **Problem:** Missing game context that sharps use
 **Solution:** Add situational edges
 
-- [ ] Playoff implications (clinched, eliminated, fighting for spot)
-- [ ] Revenge games (recent head-to-head blowout losses)
-- [ ] Division games (more competitive historically)
-- [ ] Home stand / road trip game number
-- [ ] Coming off long break (All-Star, bye week)
-- [ ] Altitude adjustment (Denver games)
+- [x] Division games indicator (29.5% of games)
+- [x] Revenge games (blowout loss in last 60 days): 13.4% home, 12.3% away
+- [x] Altitude adjustment (Denver games): 3.3%
+- [x] Home stand / road trip game number tracking
+- [x] Long home stand (5+): 5.5%
+- [x] Long road trip (4+): 13.9%
+- [x] Timezone travel fatigue (2+ zones): 24.9%
+
+**16 new situational features added**
 
 **Expected Impact:** +0.5% Brier improvement
 

@@ -35,20 +35,20 @@ MARKET_LOGLOSS = 0.6367
 
 def load_data():
     """Load processed matchup data with all features."""
-    # Try V3 (most features) first
+    # Priority: situational (newest) > goalie > v3 > base
+    situational_path = DATA_DIR / 'processed' / 'matchups_with_situational.csv'
+    goalie_path = DATA_DIR / 'processed' / 'matchups_with_goalie.csv'
     v3_path = DATA_DIR / 'processed' / 'matchups_v3.csv'
-    full_path = DATA_DIR / 'processed' / 'matchups_with_all_features.csv'
-    schedule_path = DATA_DIR / 'processed' / 'matchups_with_schedule.csv'
     
-    if v3_path.exists():
+    if situational_path.exists():
+        df = pd.read_csv(situational_path, low_memory=False)
+        print(f"Loaded situational data: {len(df)} games (ALL NEW FEATURES)")
+    elif goalie_path.exists():
+        df = pd.read_csv(goalie_path, low_memory=False)
+        print(f"Loaded goalie data: {len(df)} games")
+    elif v3_path.exists():
         df = pd.read_csv(v3_path)
         print(f"Loaded V3 data: {len(df)} games")
-    elif full_path.exists():
-        df = pd.read_csv(full_path)
-        print(f"Loaded full-featured data: {len(df)} games")
-    elif schedule_path.exists():
-        df = pd.read_csv(schedule_path)
-        print(f"Loaded schedule-enhanced data: {len(df)} games")
     else:
         df = pd.read_csv(DATA_DIR / 'processed' / 'matchups_featured.csv')
         print(f"Loaded base data: {len(df)} games")
@@ -100,9 +100,15 @@ def get_feature_cols(df):
     """Identify feature columns including new schedule features."""
     exclude = ['gameId', 'gameDate', 'season', 'h_team', 'a_team', 'home_win',
                'h_totalGoalsFor', 'h_totalGoalsAgainst', 'a_totalGoalsFor', 'a_totalGoalsAgainst',
-               'date', 'market_home_prob']  # Exclude market prob (that's what we're trying to beat)
+               'date', 'market_home_prob',
+               # Exclude string/id columns
+               'home_goalie_id', 'away_goalie_id', 'home_goalie_name', 'away_goalie_name',
+               'h_division', 'a_division']  
     
-    return [c for c in df.columns if c not in exclude and not c.startswith('Unnamed')]
+    # Get numeric AND boolean columns
+    numeric_cols = df.select_dtypes(include=[np.number, 'bool']).columns.tolist()
+    
+    return [c for c in numeric_cols if c not in exclude and not c.startswith('Unnamed')]
 
 
 def train_xgboost_v2(X_train, y_train, X_val, y_val):
@@ -211,9 +217,10 @@ def main():
     schedule_features = [c for c in feature_cols if any(x in c for x in ['b2b', 'rest', 'travel', 'tz_change', 'fatigue'])]
     goalie_features = [c for c in feature_cols if 'goalie' in c.lower()]
     depth_features = [c for c in feature_cols if any(x in c for x in ['depth', 'backup', 'starter_share'])]
-    print(f"Schedule features ({len(schedule_features)}): {schedule_features}")
-    print(f"Goalie features ({len(goalie_features)}): {goalie_features}")
-    print(f"Depth features ({len(depth_features)}): {depth_features}")
+    situational_features = [c for c in feature_cols if any(x in c for x in ['division', 'altitude', 'timezone', 'revenge', 'stand', 'trip'])]
+    print(f"Schedule features ({len(schedule_features)}): {schedule_features[:5]}...")
+    print(f"Goalie features ({len(goalie_features)}): {goalie_features[:5]}...")
+    print(f"Situational features ({len(situational_features)}): {situational_features[:5]}...")
     
     # Walk-forward split - train on older, test on recent
     # Train: 2008-2022, Val: 2023, Test: 2024-2025
