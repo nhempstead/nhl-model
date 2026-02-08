@@ -1,9 +1,104 @@
 {
-  "fetched_at": "2026-02-06T15:00:15.800662+00:00",
+  "fetched_at": "2026-02-07T15:00:16.850270+00:00",
   "days": 3,
   "teams_filter": null,
   "count": 25,
   "transactions": [
+    {
+      "date": "2026-02-06",
+      "team": "NSH",
+      "text": "Assigned F Reid Schaefer to Milwaukee (AHL).",
+      "type": "OTHER",
+      "players": [
+        {
+          "position": "F",
+          "name": "Reid Schaefer"
+        }
+      ]
+    },
+    {
+      "date": "2026-02-06",
+      "team": "FLA",
+      "text": "Assigned D Mikulas Hovorka to Charlotte (AHL).",
+      "type": "OTHER",
+      "players": [
+        {
+          "position": "D",
+          "name": "Mikulas Hovorka"
+        }
+      ]
+    },
+    {
+      "date": "2026-02-06",
+      "team": "TOR",
+      "text": "Assigned D Marshall Rifai to Toronto (AHL).",
+      "type": "OTHER",
+      "players": [
+        {
+          "position": "D",
+          "name": "Marshall Rifai"
+        }
+      ]
+    },
+    {
+      "date": "2026-02-06",
+      "team": "TB",
+      "text": "Waived F Jack Finley.",
+      "type": "OTHER",
+      "players": [
+        {
+          "position": "F",
+          "name": "Jack Finley"
+        }
+      ]
+    },
+    {
+      "date": "2026-02-06",
+      "team": "PIT",
+      "text": "Assigned Fs Rutger McGroarty and Avery Hayes to Wilkes-Barre/Scranton (AHL).",
+      "type": "OTHER",
+      "players": []
+    },
+    {
+      "date": "2026-02-06",
+      "team": "PHI",
+      "text": "Assigned G Alexei Kolosov to Lehigh Valley (AHL).",
+      "type": "OTHER",
+      "players": [
+        {
+          "position": "G",
+          "name": "Alexei Kolosov"
+        }
+      ]
+    },
+    {
+      "date": "2026-02-06",
+      "team": "OTT",
+      "text": "Assigned F Stephen Halliday and G Hunter Shepard to Belleville (AHL).",
+      "type": "OTHER",
+      "players": [
+        {
+          "position": "F",
+          "name": "Stephen Halliday"
+        },
+        {
+          "position": "G",
+          "name": "Hunter Shepard"
+        }
+      ]
+    },
+    {
+      "date": "2026-02-06",
+      "team": "LA",
+      "text": "Assigned D Joe Hicketts to Ontario (AHL).",
+      "type": "OTHER",
+      "players": [
+        {
+          "position": "D",
+          "name": "Joe Hicketts"
+        }
+      ]
+    },
     {
       "date": "2026-02-05",
       "team": "SEA",
@@ -220,137 +315,6 @@
         {
           "position": "F",
           "name": "Bogdan Trineyev"
-        }
-      ]
-    },
-    {
-      "date": "2026-02-04",
-      "team": "STL",
-      "text": "Acquired F Thomas Bordeleau and a 2026 fourth-round pick from New Jersey Devils for F Nick Bjugstad.",
-      "type": "TRADE",
-      "players": [
-        {
-          "position": "F",
-          "name": "Thomas Bordeleau"
-        },
-        {
-          "position": "F",
-          "name": "Nick Bjugstad"
-        }
-      ],
-      "trade_partner": "NJD"
-    },
-    {
-      "date": "2026-02-04",
-      "team": "SJ",
-      "text": "Activated F Kiefer Sherwood from waivers.",
-      "type": "WAIVER",
-      "players": [
-        {
-          "position": "F",
-          "name": "Kiefer Sherwood"
-        }
-      ]
-    },
-    {
-      "date": "2026-02-04",
-      "team": "PIT",
-      "text": "Sent F Melvin Fernstr\u00f6m to Wilkes-Barre/Scranton (AHL).",
-      "type": "ROSTER",
-      "players": [
-        {
-          "position": "F",
-          "name": "Melvin Fernstr"
-        }
-      ]
-    },
-    {
-      "date": "2026-02-04",
-      "team": "NYR",
-      "text": "Sent D Connor Mackey to Hartford (AHL). Recalled LW Anton Blidh from Hartford.",
-      "type": "ROSTER",
-      "players": [
-        {
-          "position": "D",
-          "name": "Connor Mackey"
-        },
-        {
-          "position": "LW",
-          "name": "Anton Blidh"
-        }
-      ]
-    },
-    {
-      "date": "2026-02-04",
-      "team": "NJ",
-      "text": "Acquired F Nick Bjugstad from St. Louis in exchange for F Thomas Bordeleau and a 2026 fourth-round pick. Sent F Juho Lammikko to Utica (AHL).",
-      "type": "TRADE",
-      "players": [
-        {
-          "position": "F",
-          "name": "Nick Bjugstad"
-        },
-        {
-          "position": "F",
-          "name": "Thomas Bordeleau"
-        },
-        {
-          "position": "F",
-          "name": "Juho Lammikko"
-        }
-      ],
-      "trade_partner": "BOS"
-    },
-    {
-      "date": "2026-02-04",
-      "team": "LA",
-      "text": "Acquired F Artemi Panarin from the New York Rangers in exchange for F Liam Greentree and two conditional 2026 third-round picks. Signed F Artemi Panarin to a two-year contract.",
-      "type": "TRADE",
-      "players": [
-        {
-          "position": "F",
-          "name": "Artemi Panarin"
-        },
-        {
-          "position": "F",
-          "name": "Liam Greentree"
-        },
-        {
-          "position": "F",
-          "name": "Artemi Panarin"
-        }
-      ],
-      "trade_partner": "NYR"
-    },
-    {
-      "date": "2026-02-03",
-      "team": "VGK",
-      "text": "Sent D Dylan Coghlan and F Tanner Laczynski to Henderson (AHL) and recalled F Kai Uchacz from Henderson.",
-      "type": "ROSTER",
-      "players": [
-        {
-          "position": "D",
-          "name": "Dylan Coghlan"
-        },
-        {
-          "position": "F",
-          "name": "Tanner Laczynski"
-        },
-        {
-          "position": "F",
-          "name": "Kai Uchacz"
-        }
-      ]
-    },
-    {
-      "date": "2026-02-03",
-      "team": "NSH",
-      "text": "Sent D Andreas Englund to Milwaukee (AHL).",
-      "type": "ROSTER",
-      "players": [
-        {
-          "position": "D",
-          "name": "Andreas Englund"
         }
       ]
     }

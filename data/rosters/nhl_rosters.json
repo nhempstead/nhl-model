@@ -1,5 +1,5 @@
 {
-  "fetched_at": "2026-02-06T15:00:12.750596+00:00",
+  "fetched_at": "2026-02-07T15:00:13.780872+00:00",
   "team_count": 33,
   "teams": {
     "ANA": {
@@ -362,7 +362,7 @@
         }
       ],
       "total_players": 27,
-      "fetched_at": "2026-02-06T15:00:06.051478+00:00"
+      "fetched_at": "2026-02-07T15:00:07.134687+00:00"
     },
     "ARI": {
       "error": "No data"
@@ -675,7 +675,7 @@
         }
       ],
       "total_players": 23,
-      "fetched_at": "2026-02-06T15:00:06.490042+00:00"
+      "fetched_at": "2026-02-07T15:00:07.591416+00:00"
     },
     "BUF": {
       "team": "BUF",
@@ -744,19 +744,6 @@
           "weight_lb": 231,
           "birth_date": "1997-02-16",
           "birth_country": "USA"
-        },
-        {
-          "id": 8484797,
-          "first_name": "Konsta",
-          "last_name": "Helenius",
-          "name": "Konsta Helenius",
-          "number": 94,
-          "position": "C",
-          "shoots": "R",
-          "height_in": 71,
-          "weight_lb": 190,
-          "birth_date": "2006-05-11",
-          "birth_country": "FIN"
         },
         {
           "id": 8482896,
@@ -861,19 +848,6 @@
           "weight_lb": 185,
           "birth_date": "2001-09-19",
           "birth_country": "CAN"
-        },
-        {
-          "id": 8482765,
-          "first_name": "Isak",
-          "last_name": "Rosen",
-          "name": "Isak Rosen",
-          "number": 63,
-          "position": "R",
-          "shoots": "L",
-          "height_in": 72,
-          "weight_lb": 185,
-          "birth_date": "2003-03-15",
-          "birth_country": "SWE"
         },
         {
           "id": 8479420,
@@ -1062,8 +1036,8 @@
           "birth_country": "USA"
         }
       ],
-      "total_players": 29,
-      "fetched_at": "2026-02-06T15:00:06.668916+00:00"
+      "total_players": 27,
+      "fetched_at": "2026-02-07T15:00:07.780830+00:00"
     },
     "CGY": {
       "team": "CGY",
@@ -1412,7 +1386,7 @@
         }
       ],
       "total_players": 26,
-      "fetched_at": "2026-02-06T15:00:06.891853+00:00"
+      "fetched_at": "2026-02-07T15:00:08.006290+00:00"
     },
     "CAR": {
       "team": "CAR",
@@ -1722,7 +1696,7 @@
         }
       ],
       "total_players": 23,
-      "fetched_at": "2026-02-06T15:00:07.070711+00:00"
+      "fetched_at": "2026-02-07T15:00:08.255074+00:00"
     },
     "CHI": {
       "team": "CHI",
@@ -2019,7 +1993,7 @@
         }
       ],
       "total_players": 22,
-      "fetched_at": "2026-02-06T15:00:07.285866+00:00"
+      "fetched_at": "2026-02-07T15:00:08.472479+00:00"
     },
     "COL": {
       "team": "COL",
@@ -2303,7 +2277,7 @@
         }
       ],
       "total_players": 21,
-      "fetched_at": "2026-02-06T15:00:07.461714+00:00"
+      "fetched_at": "2026-02-07T15:00:08.679284+00:00"
     },
     "CBJ": {
       "team": "CBJ",
@@ -2626,7 +2600,7 @@
         }
       ],
       "total_players": 24,
-      "fetched_at": "2026-02-06T15:00:07.687919+00:00"
+      "fetched_at": "2026-02-07T15:00:08.871356+00:00"
     },
     "DAL": {
       "team": "DAL",
@@ -2962,7 +2936,7 @@
         }
       ],
       "total_players": 25,
-      "fetched_at": "2026-02-06T15:00:07.866007+00:00"
+      "fetched_at": "2026-02-07T15:00:09.047104+00:00"
     },
     "DET": {
       "team": "DET",
@@ -3259,7 +3233,7 @@
         }
       ],
       "total_players": 22,
-      "fetched_at": "2026-02-06T15:00:08.045843+00:00"
+      "fetched_at": "2026-02-07T15:00:09.241080+00:00"
     },
     "EDM": {
       "team": "EDM",
@@ -3556,7 +3530,7 @@
         }
       ],
       "total_players": 22,
-      "fetched_at": "2026-02-06T15:00:08.300589+00:00"
+      "fetched_at": "2026-02-07T15:00:09.430117+00:00"
     },
     "FLA": {
       "team": "FLA",
@@ -3824,19 +3798,6 @@
           "birth_country": "SWE"
         },
         {
-          "id": 8484933,
-          "first_name": "Mikulas",
-          "last_name": "Hovorka",
-          "name": "Mikulas Hovorka",
-          "number": 96,
-          "position": "D",
-          "shoots": "R",
-          "height_in": 78,
-          "weight_lb": 229,
-          "birth_date": "2001-07-01",
-          "birth_country": "CZE"
-        },
-        {
           "id": 8477495,
           "first_name": "Seth",
           "last_name": "Jones",
@@ -3930,8 +3891,8 @@
           "birth_country": "RUS"
         }
       ],
-      "total_players": 28,
-      "fetched_at": "2026-02-06T15:00:08.498281+00:00"
+      "total_players": 27,
+      "fetched_at": "2026-02-07T15:00:09.650226+00:00"
     },
     "LAK": {
       "team": "LAK",
@@ -4225,19 +4186,6 @@
           "birth_country": "CAN"
         },
         {
-          "id": 8478176,
-          "first_name": "Joe",
-          "last_name": "Hicketts",
-          "name": "Joe Hicketts",
-          "number": 27,
-          "position": "D",
-          "shoots": "L",
-          "height_in": 68,
-          "weight_lb": 176,
-          "birth_date": "1996-05-04",
-          "birth_country": "CAN"
-        },
-        {
           "id": 8479421,
           "first_name": "Jacob",
           "last_name": "Moverare",
@@ -4279,8 +4227,8 @@
           "birth_country": "CAN"
         }
       ],
-      "total_players": 26,
-      "fetched_at": "2026-02-06T15:00:08.726004+00:00"
+      "total_players": 25,
+      "fetched_at": "2026-02-07T15:00:09.877355+00:00"
     },
     "MIN": {
       "team": "MIN",
@@ -4564,7 +4512,7 @@
         }
       ],
       "total_players": 21,
-      "fetched_at": "2026-02-06T15:00:08.942258+00:00"
+      "fetched_at": "2026-02-07T15:00:10.061769+00:00"
     },
     "MTL": {
       "team": "MTL",
@@ -4887,7 +4835,7 @@
         }
       ],
       "total_players": 24,
-      "fetched_at": "2026-02-06T15:00:09.155294+00:00"
+      "fetched_at": "2026-02-07T15:00:10.235775+00:00"
     },
     "NSH": {
       "team": "NSH",
@@ -4994,19 +4942,6 @@
           "height_in": 73,
           "weight_lb": 207,
           "birth_date": "1991-02-07",
-          "birth_country": "CAN"
-        },
-        {
-          "id": 8483513,
-          "first_name": "Reid",
-          "last_name": "Schaefer",
-          "name": "Reid Schaefer",
-          "number": 49,
-          "position": "L",
-          "shoots": "L",
-          "height_in": 77,
-          "weight_lb": 226,
-          "birth_date": "2003-09-21",
           "birth_country": "CAN"
         },
         {
@@ -5170,8 +5105,8 @@
           "birth_country": "FIN"
         }
       ],
-      "total_players": 21,
-      "fetched_at": "2026-02-06T15:00:09.370355+00:00"
+      "total_players": 20,
+      "fetched_at": "2026-02-07T15:00:10.451087+00:00"
     },
     "NJD": {
       "team": "NJD",
@@ -5279,19 +5214,6 @@
           "weight_lb": 195,
           "birth_date": "2001-03-15",
           "birth_country": "RUS"
-        },
-        {
-          "id": 8484177,
-          "first_name": "Lenni",
-          "last_name": "Hameenaho",
-          "name": "Lenni Hameenaho",
-          "number": 29,
-          "position": "R",
-          "shoots": "R",
-          "height_in": 72,
-          "weight_lb": 173,
-          "birth_date": "2004-11-07",
-          "birth_country": "FIN"
         },
         {
           "id": 8480002,
@@ -5489,19 +5411,6 @@
           "weight_lb": 218,
           "birth_date": "1997-05-06",
           "birth_country": "CHE"
-        },
-        {
-          "id": 8478841,
-          "first_name": "Colton",
-          "last_name": "White",
-          "name": "Colton White",
-          "number": 45,
-          "position": "D",
-          "shoots": "L",
-          "height_in": 73,
-          "weight_lb": 187,
-          "birth_date": "1997-05-03",
-          "birth_country": "CAN"
         }
       ],
       "goalies": [
@@ -5532,8 +5441,8 @@
           "birth_country": "SWE"
         }
       ],
-      "total_players": 27,
-      "fetched_at": "2026-02-06T15:00:09.563458+00:00"
+      "total_players": 25,
+      "fetched_at": "2026-02-07T15:00:10.631925+00:00"
     },
     "NYI": {
       "team": "NYI",
@@ -5882,7 +5791,7 @@
         }
       ],
       "total_players": 26,
-      "fetched_at": "2026-02-06T15:00:09.764149+00:00"
+      "fetched_at": "2026-02-07T15:00:10.815668+00:00"
     },
     "NYR": {
       "team": "NYR",
@@ -6178,17 +6087,17 @@
       ],
       "goalies": [
         {
-          "id": 8477484,
-          "first_name": "Spencer",
-          "last_name": "Martin",
-          "name": "Spencer Martin",
-          "number": 41,
+          "id": 8482504,
+          "first_name": "Hugo",
+          "last_name": "Ollas",
+          "name": "Hugo Ollas",
+          "number": 80,
           "position": "G",
           "shoots": "L",
-          "height_in": 75,
-          "weight_lb": 191,
-          "birth_date": "1995-06-08",
-          "birth_country": "CAN"
+          "height_in": 80,
+          "weight_lb": 260,
+          "birth_date": "2002-04-24",
+          "birth_country": "SWE"
         },
         {
           "id": 8471734,
@@ -6218,7 +6127,7 @@
         }
       ],
       "total_players": 25,
-      "fetched_at": "2026-02-06T15:00:09.985875+00:00"
+      "fetched_at": "2026-02-07T15:00:11.033967+00:00"
     },
     "OTT": {
       "team": "OTT",
@@ -6312,19 +6221,6 @@
           "height_in": 72,
           "weight_lb": 184,
           "birth_date": "2002-08-08",
-          "birth_country": "CAN"
-        },
-        {
-          "id": 8483676,
-          "first_name": "Stephen",
-          "last_name": "Halliday",
-          "name": "Stephen Halliday",
-          "number": 83,
-          "position": "C",
-          "shoots": "L",
-          "height_in": 76,
-          "weight_lb": 214,
-          "birth_date": "2002-07-02",
           "birth_country": "CAN"
         },
         {
@@ -6514,19 +6410,6 @@
           "birth_country": "CAN"
         },
         {
-          "id": 8482411,
-          "first_name": "Hunter",
-          "last_name": "Shepard",
-          "name": "Hunter Shepard",
-          "number": 31,
-          "position": "G",
-          "shoots": "L",
-          "height_in": 71,
-          "weight_lb": 225,
-          "birth_date": "1995-11-07",
-          "birth_country": "USA"
-        },
-        {
           "id": 8476999,
           "first_name": "Linus",
           "last_name": "Ullmark",
@@ -6540,8 +6423,8 @@
           "birth_country": "SWE"
         }
       ],
-      "total_players": 24,
-      "fetched_at": "2026-02-06T15:00:10.199022+00:00"
+      "total_players": 22,
+      "fetched_at": "2026-02-07T15:00:11.218497+00:00"
     },
     "PHI": {
       "team": "PHI",
@@ -6850,19 +6733,6 @@
           "birth_country": "SWE"
         },
         {
-          "id": 8482783,
-          "first_name": "Aleksei",
-          "last_name": "Kolosov",
-          "name": "Aleksei Kolosov",
-          "number": 35,
-          "position": "G",
-          "shoots": "L",
-          "height_in": 73,
-          "weight_lb": 185,
-          "birth_date": "2002-01-04",
-          "birth_country": "BLR"
-        },
-        {
           "id": 8478435,
           "first_name": "Dan",
           "last_name": "Vladar",
@@ -6876,8 +6746,8 @@
           "birth_country": "CZE"
         }
       ],
-      "total_players": 25,
-      "fetched_at": "2026-02-06T15:00:10.416148+00:00"
+      "total_players": 24,
+      "fetched_at": "2026-02-07T15:00:11.443614+00:00"
     },
     "PIT": {
       "team": "PIT",
@@ -6961,19 +6831,6 @@
           "birth_country": "SWE"
         },
         {
-          "id": 8482993,
-          "first_name": "Avery",
-          "last_name": "Hayes",
-          "name": "Avery Hayes",
-          "number": 85,
-          "position": "R",
-          "shoots": "R",
-          "height_in": 70,
-          "weight_lb": 180,
-          "birth_date": "2002-10-10",
-          "birth_country": "USA"
-        },
-        {
           "id": 8475763,
           "first_name": "Kevin",
           "last_name": "Hayes",
@@ -7024,19 +6881,6 @@
           "weight_lb": 240,
           "birth_date": "1994-09-16",
           "birth_country": "CAN"
-        },
-        {
-          "id": 8483487,
-          "first_name": "Rutger",
-          "last_name": "McGroarty",
-          "name": "Rutger McGroarty",
-          "number": 2,
-          "position": "R",
-          "shoots": "L",
-          "height_in": 73,
-          "weight_lb": 212,
-          "birth_date": "2004-03-30",
-          "birth_country": "USA"
         },
         {
           "id": 8478438,
@@ -7225,8 +7069,8 @@
           "birth_country": "CAN"
         }
       ],
-      "total_players": 26,
-      "fetched_at": "2026-02-06T15:00:10.623685+00:00"
+      "total_players": 24,
+      "fetched_at": "2026-02-07T15:00:11.625679+00:00"
     },
     "SJS": {
       "team": "SJS",
@@ -7562,7 +7406,7 @@
         }
       ],
       "total_players": 25,
-      "fetched_at": "2026-02-06T15:00:10.836455+00:00"
+      "fetched_at": "2026-02-07T15:00:11.838602+00:00"
     },
     "SEA": {
       "team": "SEA",
@@ -7605,19 +7449,6 @@
           "weight_lb": 180,
           "birth_date": "1990-05-15",
           "birth_country": "CAN"
-        },
-        {
-          "id": 8484168,
-          "first_name": "Oscar",
-          "last_name": "Fisker Molgaard",
-          "name": "Oscar Fisker Molgaard",
-          "number": 78,
-          "position": "C",
-          "shoots": "L",
-          "height_in": 72,
-          "weight_lb": 168,
-          "birth_date": "2005-02-18",
-          "birth_country": "DNK"
         },
         {
           "id": 8477919,
@@ -7910,8 +7741,8 @@
           "birth_country": "CAN"
         }
       ],
-      "total_players": 26,
-      "fetched_at": "2026-02-06T15:00:11.022787+00:00"
+      "total_players": 25,
+      "fetched_at": "2026-02-07T15:00:12.037083+00:00"
     },
     "STL": {
       "team": "STL",
@@ -8247,7 +8078,7 @@
         }
       ],
       "total_players": 25,
-      "fetched_at": "2026-02-06T15:00:11.245924+00:00"
+      "fetched_at": "2026-02-07T15:00:12.246707+00:00"
     },
     "TBL": {
       "team": "TBL",
@@ -8596,7 +8427,7 @@
         }
       ],
       "total_players": 26,
-      "fetched_at": "2026-02-06T15:00:11.440370+00:00"
+      "fetched_at": "2026-02-07T15:00:12.427060+00:00"
     },
     "TOR": {
       "team": "TOR",
@@ -8919,7 +8750,7 @@
         }
       ],
       "total_players": 24,
-      "fetched_at": "2026-02-06T15:00:11.626258+00:00"
+      "fetched_at": "2026-02-07T15:00:12.620119+00:00"
     },
     "UTA": {
       "team": "UTA",
@@ -9229,7 +9060,7 @@
         }
       ],
       "total_players": 23,
-      "fetched_at": "2026-02-06T15:00:11.811982+00:00"
+      "fetched_at": "2026-02-07T15:00:12.797489+00:00"
     },
     "VAN": {
       "team": "VAN",
@@ -9591,7 +9422,7 @@
         }
       ],
       "total_players": 27,
-      "fetched_at": "2026-02-06T15:00:12.011623+00:00"
+      "fetched_at": "2026-02-07T15:00:13.035830+00:00"
     },
     "VGK": {
       "team": "VGK",
@@ -9803,19 +9634,6 @@
           "weight_lb": 210,
           "birth_date": "1992-05-13",
           "birth_country": "CAN"
-        },
-        {
-          "id": 8485251,
-          "first_name": "Kai",
-          "last_name": "Uchacz",
-          "name": "Kai Uchacz",
-          "number": 77,
-          "position": "C",
-          "shoots": "R",
-          "height_in": 74,
-          "weight_lb": 206,
-          "birth_date": "2003-06-24",
-          "birth_country": "CAN"
         }
       ],
       "defensemen": [
@@ -9952,8 +9770,8 @@
           "birth_country": "CHE"
         }
       ],
-      "total_players": 27,
-      "fetched_at": "2026-02-06T15:00:12.190044+00:00"
+      "total_players": 26,
+      "fetched_at": "2026-02-07T15:00:13.234457+00:00"
     },
     "WSH": {
       "team": "WSH",
@@ -10289,7 +10107,7 @@
         }
       ],
       "total_players": 25,
-      "fetched_at": "2026-02-06T15:00:12.424666+00:00"
+      "fetched_at": "2026-02-07T15:00:13.463470+00:00"
     },
     "WPG": {
       "team": "WPG",
@@ -10599,7 +10417,7 @@
         }
       ],
       "total_players": 23,
-      "fetched_at": "2026-02-06T15:00:12.650172+00:00"
+      "fetched_at": "2026-02-07T15:00:13.680441+00:00"
     }
   }
 }
