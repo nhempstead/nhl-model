@@ -1,9 +1,33 @@
 {
-  "fetched_at": "2026-02-07T15:00:16.850270+00:00",
+  "fetched_at": "2026-02-08T15:00:17.886116+00:00",
   "days": 3,
   "teams_filter": null,
-  "count": 25,
+  "count": 22,
   "transactions": [
+    {
+      "date": "2026-02-07",
+      "team": "VGK",
+      "text": "Assigned F Kai Uchacz to Henderson (AHL).",
+      "type": "OTHER",
+      "players": [
+        {
+          "position": "F",
+          "name": "Kai Uchacz"
+        }
+      ]
+    },
+    {
+      "date": "2026-02-07",
+      "team": "STL",
+      "text": "Claimed F Jack Finley of waivers from the Tampa Bay Lightning.",
+      "type": "WAIVER",
+      "players": [
+        {
+          "position": "F",
+          "name": "Jack Finley"
+        }
+      ]
+    },
     {
       "date": "2026-02-06",
       "team": "NSH",
@@ -251,70 +275,6 @@
         {
           "position": "D",
           "name": "Sam Rinzel"
-        }
-      ]
-    },
-    {
-      "date": "2026-02-04",
-      "team": "UTA",
-      "text": "Sent F Daniil But to Tucson (AHL).",
-      "type": "ROSTER",
-      "players": [
-        {
-          "position": "F",
-          "name": "Daniil But"
-        }
-      ]
-    },
-    {
-      "date": "2026-02-04",
-      "team": "SEA",
-      "text": "Placed F Berkly Catton on injured reserve and recalled F Oscar Fisker Molgaard from Coachella Valley (AHL).",
-      "type": "IR",
-      "players": [
-        {
-          "position": "F",
-          "name": "Berkly Catton"
-        },
-        {
-          "position": "F",
-          "name": "Oscar Fisker Molgaard"
-        }
-      ]
-    },
-    {
-      "date": "2026-02-04",
-      "team": "NSH",
-      "text": "Recalled F Reid Schaefer from Milwaukee (AHL).",
-      "type": "ROSTER",
-      "players": [
-        {
-          "position": "F",
-          "name": "Reid Schaefer"
-        }
-      ]
-    },
-    {
-      "date": "2026-02-04",
-      "team": "ANA",
-      "text": "Sent F Tim Washe to San Diego (AHL).",
-      "type": "ROSTER",
-      "players": [
-        {
-          "position": "F",
-          "name": "Tim Washe"
-        }
-      ]
-    },
-    {
-      "date": "2026-02-04",
-      "team": "WSH",
-      "text": "Sent F Bogdan Trineyev to Hershey (AHL).",
-      "type": "ROSTER",
-      "players": [
-        {
-          "position": "F",
-          "name": "Bogdan Trineyev"
         }
       ]
     }
