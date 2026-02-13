@@ -1,9 +1,33 @@
 {
-  "fetched_at": "2026-02-11T15:00:16.241137+00:00",
+  "fetched_at": "2026-02-12T15:00:16.118582+00:00",
   "days": 3,
   "teams_filter": null,
-  "count": 1,
+  "count": 3,
   "transactions": [
+    {
+      "date": "2026-02-11",
+      "team": "NJ",
+      "text": "Reinstated F Marc McLaughlin from long-term injured reserve and placed him on waivers.",
+      "type": "IR",
+      "players": [
+        {
+          "position": "F",
+          "name": "Marc Mc"
+        }
+      ]
+    },
+    {
+      "date": "2026-02-11",
+      "team": "BOS",
+      "text": "Reinstated F Elias Lindholm from injured reserve.",
+      "type": "IR",
+      "players": [
+        {
+          "position": "F",
+          "name": "Elias Lindholm"
+        }
+      ]
+    },
     {
       "date": "2026-02-10",
       "team": "WSH",
