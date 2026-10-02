@@ -1,0 +1,77 @@
+# Default research contract for NHL 2026-27 paper-trading platform.
+# Values here are documented defaults, not claimed optima.
+
+project:
+  name: nhl-research
+  target_season: "2026-2027"
+  season_code: 2026
+  timezone_display: America/New_York
+  internal_timezone: UTC
+
+forecast:
+  primary_market: moneyline_full_game
+  primary_selection: home_win
+  horizon_minutes_before_start: 60
+  additional_horizons_minutes: [1440, 15]
+  include_overtime_and_shootout: true
+  regulation_only: false
+
+validation:
+  method: chronological_walk_forward
+  train_seasons_end: 2022
+  calibration_season: 2023
+  evaluation_seasons: [2024, 2025]
+  prospective_season: 2026
+  random_split_forbidden: true
+  freeze_strategy_thresholds_before_evaluation: true
+
+metrics:
+  primary:
+    - log_loss
+    - brier_score
+  calibration:
+    - reliability_bins
+    - calibration_slope
+    - calibration_intercept
+  comparison:
+    - paired_delta_log_loss_vs_market
+  paper_trading:
+    - hypothetical_unit_return
+    - max_drawdown
+  significance_level: 0.05
+  power_targets: [0.80, 0.90]
+  bootstrap_replicates: 500
+  power_simulations: 2000
+  block: gameday
+
+markets:
+  de_vig_method: proportional_same_book_same_timestamp
+  paper_unit: 1.0
+  quote_max_age_minutes: 180
+  require_complete_two_way_market: true
+  allow_best_price_across_books: false
+  eligibility:
+    require_lower_expected_return_bound_positive: true
+    max_probability_interval_width: 0.25
+    min_model_probability: 0.05
+    max_model_probability: 0.95
+
+learning:
+  min_new_settled_games: 200
+  max_log_loss_regression: 0.01
+  require_calibration_not_worse: true
+  automatic_feature_promotion: false
+  automatic_hyperparameter_promotion: false
+  update_cadence: after_evaluation_window
+
+compute:
+  cpu_only: true
+  max_runtime_minutes_core: 20
+  random_seed: 20261002
+
+paths:
+  warehouse: data/warehouse
+  reports: reports
+  registry: models/registry
+  raw: data/raw
+  processed: data/processed

@@ -1,0 +1,50 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+venv/
+ENV/
+
+# IDE
+.idea/
+.vscode/
+*.swp
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Jupyter
+.ipynb_checkpoints/
+
+# Logs
+*.log
+logs/*.log
+
+# Local secrets and environment
+.env
+.env.local
+
+# Research warehouse (generated)
+data/warehouse/
+
+# Generated reports: keep JSON/HTML exports, ignore temp
+reports/*
+!reports/*.json
+!reports/*.html
+!reports/.gitkeep
+models/registry/*.json
+models/registry/versions/
+!models/registry/.gitkeep
+
+# Test / build
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+htmlcov/
+.coverage
+dist/
+build/
+*.egg-info/
